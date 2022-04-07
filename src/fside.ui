@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>fsIDE</class>
+ <widget class="QMainWindow" name="fsIDE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1272</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>fsIDE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="rsc.qrc">
+    <normaloff>:/foveaicon_large.png</normaloff>:/foveaicon_large.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">border: none;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="2" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #e5e5e5;</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>627</width>
+         <height>515</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="3" colspan="5">
+         <widget class="QLineEdit" name="plugin_name_edit">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;
+border-radius: 10px;
+padding: 2px;
+background-color: white;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Plugin Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="8" colspan="6">
+         <widget class="QLineEdit" name="keyword_value_edit">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;
+border-radius: 10px;
+padding: 2px;
+background-color: white;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Enter a Keyword</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="9" colspan="5">
+         <widget class="QPushButton" name="run_button">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;
+border-radius: 10px;
+padding: 2px;</string>
+          </property>
+          <property name="text">
+           <string>Run Script</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/run.png</normaloff>:/run.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" colspan="2">
+         <widget class="QCheckBox" name="checkBox_2">
+          <property name="text">
+           <string>Disable AI</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QPushButton" name="signout_button">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;
+border-radius: 10px;
+padding: 2px;</string>
+          </property>
+          <property name="text">
+           <string>Sign Out</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/logout.png</normaloff>:/logout.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QPushButton" name="upload_button">
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;
+border-radius: 10px;
+padding: 2px;</string>
+          </property>
+          <property name="text">
+           <string>Upload Script</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rsc.qrc">
+            <normaloff>:/upload.png</normaloff>:/upload.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0" colspan="14">
+         <widget class="CodeEditor" name="func_code_edit">
+          <property name="styleSheet">
+           <string notr="true">background-color: #ffffff;
+border-bottom: 1px solid white;
+border-radius: 10px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #ffffff;</string>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-478</y>
+         <width>610</width>
+         <height>4036</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>20</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">border: none;</string>
+          </property>
+          <property name="text">
+           <string>&lt;h3 style=&quot;color: #545454;background-color: #e5e5e5;&quot;&gt;Output&lt;/h3&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="output_response_edit">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #ffffff;
+border-radius: 100px;</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: none;</string>
+          </property>
+          <property name="text">
+           <string>&lt;h3 style=&quot;color: #545454;background-color: #e5e5e5;&quot;&gt;Documentation&lt;/h3&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignHCenter|Qt::AlignTop</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="documentation_label">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #ffffff;
+border-radius: 10px;
+padding-top: 20%;
+</string>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Control Structures&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Two types of control structures are supported while and for. The for control structure is designed to only work with lists. Examples are shown below. Note all loops are not sequential but the loop body run concurrently for all iterations. Loop iterator in a while loop is the 'index' variable and has to be initialized before running the loop and it is automatically incremented by one at the end of the loop. The post content should include only h1 and p tags. Images should be wrapped in &amp;lt;image&amp;gt;&amp;lt;/image&amp;gt; tag. Youtube videos should be wrapped in &amp;lt;video&amp;gt; &amp;lt;/video&amp;gt; tags.&lt;/p&gt;&lt;p&gt;var index = 0;&lt;/p&gt;&lt;p&gt;while(index &amp;lt;5)&lt;/p&gt;&lt;p&gt;{&lt;/p&gt;&lt;p&gt;}&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;for(item as some_list)&lt;/p&gt;&lt;p&gt;{&lt;/p&gt;&lt;p&gt;}&lt;/p&gt;&lt;h2 style=&quot;-qt-paragraph-type:empty; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:x-large; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/h2&gt;&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Function API&lt;/span&gt;&lt;/h2&gt;&lt;h2 style=&quot;-qt-paragraph-type:empty; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:x-large; font-weight:600;&quot;&gt;&lt;br/&gt;&lt;/h2&gt;&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string addJSONProp(json_string obj,string property_name, string property_value)&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;Returns a string representation of a JSON object with teh property added or set.&lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list append(list a_list,string appended_value)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a_list with appended_value appended. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;dictionary dict(string dictionary_string_literal)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a dictionary object from the string dictionary_string_literal.&lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;&lt;br/&gt;void disableJavaScript()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enable JavaScript Features on Fovea Engine. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string contains(string searched, string to_search_for)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a character (1 or 0) depending on whether searched literal contains to_search_for &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string createJSON()&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string representation of an empty JSON object&lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string endswith(string input_html, string ends_value)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns a character (1 or 0) depending on whether input_html ends with ends_value. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list findall(string to_find, string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returs a list of all occurences in input_html. Supports regular expressions. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;double float(string ascii_fractional_number)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a floating point version of the string literal ascii_fractional_number. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string getPage(string protocol, string url)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns html source of url. Only http and https are supported. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string getAttribute(string attribute_name, string input_html_tag)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns the attribute value of html tag in input_html_tag. Lists can be created with the list() function. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string getImagesBy(string attribute_name, string attribute_value, string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns all images with the attribute value and name specified in the function parameters. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getElementsByAttribute(string attribute_name, string attribute_value, string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of html tages with specified attribute name and value &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getElementsByClass(string class_name,string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of elements containing a class as specified in the class_name parameter. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getElementByID(string id,string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of the element containing an ID as specified in the id parameter. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getHref(string input_html,string integer_character_literal)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of the all href attributes contained in input_html if integer_character_literal is other than 0. If integer_character_literal is 0 only one href attribute value string will be returned. Note that the returned type will not be a list if integer_character_literal is 0. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getElementsBy(string an_identifier, string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of the elements with containing an_identifier literal with the tag. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list getElementsByTag(string tag_name,string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a list of the tags in input_html of type tag_name. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string getDictParameter(dict a_dictionary,string key)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns the value in a_dictionary with a key as specified in the function parameter. &lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;integer hasKeywords(string a_title,string keyword)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns the value in 1 if a_title contains keywords related to the words in keyword else returns 0.&lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;void enableJavaScript()&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Enable JavaScript Features on Fovea Engine.&lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;integer int(string ascii_number)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a integer version of the string literal ascii_number. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;integer least(integer a, integer b)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns the lower number of a and b. &lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string joinByParameter(list_of_json obj, string parameter_name, string join_string)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns a string with all json object in list with the parameter_name joined by join_string&lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string len(list a_list)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string literal of the input list i.e. a_list. Lists can be created with the list() function see below. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list list()&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a new list, accepts no parameter inputs. Use append to add values. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string multiquote(string input_string_literal)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a formatted string of input_string_literal. Use this if the string contains escaped quotes. &lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string postForm(string protocol,string link,string json_object, string referrer, string origin)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns the web page with POST request to a multi part form at the specified link using protocol and json string json_object. The headers referrer and origin can be passed to the Fovea engine.&lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string postPage(string protocol,string link,string json_object, string referrer, string origin)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns the response from a JSON POST requestb to link using protocol and json body json_object. The headers referrer and origin can be passed.&lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;JSON readJSON(string some_json_text)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns and converts the input some_json_text to a JSON object. &lt;/p&gt;&lt;hr/&gt;&lt;p&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string removeTag(string some_html_text, string tag_type)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Returns the input some_html_text with a tag of type tage_type removed&lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;list split(string input_html, string splitter_string)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns the input_html split into multiple strings at intervals wher splitter_string is present. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string strip(string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string of input_html stripped of leading and ending whitespace. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string str(int number)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string version of the integer or floating point literal. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string strReplace(string replaced_string,string replace_with,string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string of input_html with occurences of replaced_string supplanted with replace_with. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;void sendTextPost(string post_content)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Sends a text post to user with the contents in post_content. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string stripNonTextTags(string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string containing input_html with all tags besides headers and paragraph tags removed. &lt;/p&gt;&lt;hr/&gt;&lt;h4 style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:medium; font-weight:600;&quot;&gt;string stripTags(string input_html)&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;Returns a string containing input_html with all tags removed. &lt;/p&gt;&lt;hr/&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <property name="indent">
+           <number>20</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">padding-bottom: 20%;
+padding-top: 20%;
+</string>
+      </property>
+      <property name="text">
+       <string>&lt;h2 style=&quot;color: #545454;&quot;&gt;FoveaScript IDE 2.0&lt;/h2&gt;</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionUpload_Script">
+   <property name="text">
+    <string>Submit Script</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CodeEditor</class>
+   <extends>QTextEdit</extends>
+   <header>codeeditor.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="rsc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

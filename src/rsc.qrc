@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/">
+        <file>template.fs</file>
+        <file>foveaicon_large.png</file>
+        <file>eye.mtl</file>
+        <file>eye.obj</file>
+        <file>logout.png</file>
+        <file>run.png</file>
+        <file>upload.png</file>
+        <file>geeze1.ttf</file>
+        <file>AbyssinicaSIL-Regular.ttf</file>
+    </qresource>
+</RCC>
